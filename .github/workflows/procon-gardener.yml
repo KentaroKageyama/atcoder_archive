@@ -2,11 +2,10 @@ name: Procon-gardener
 
 on:
   schedule:
-  - cron: "0 0 * * *"
-  push:
+  - cron: "0 0 * * MON"
+  workflow_dispatch:
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     steps:
