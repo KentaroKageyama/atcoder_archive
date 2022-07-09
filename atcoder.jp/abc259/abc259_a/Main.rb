@@ -1,0 +1,6 @@
+N, M, X, T, D = gets.split.map(&:to_i)
+if M <= X
+    puts T - ((X - M) * D)
+else
+    puts T
+end
